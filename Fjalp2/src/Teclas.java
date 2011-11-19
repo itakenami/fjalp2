@@ -1,11 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
+ * A class <b>Teclas</b> contém as constantes necessárias para
+ * definir ou identificar teclas específicas que são comumente 
+ * utilizadas em funções de navegação ou de menu.
+ * As definições de teclas estão representadas através de 
+ * constantes do tipo {@code int} (inteiro), com letras maiúsculas, seguindo
+ * o padrão, e especificando o nome referente à tecla. 
  *
- * @author itakenami
+ * @author Igor Takenami <itakenami@gmail.com>
  */
 public class Teclas {
     public static final int BAIXO       = 14;

@@ -1,11 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
+ * A classe <b>CorFundo</b> contém constantes para as cores usadas a fim
+ * de definir o fundo do campo (seja caixa, texto ou seletor) no terminal.
+ * As definições de cores estão representadas através de constantes
+ * do tipo {@code int} (inteiro), escritas em maíusculo, por padrão,
+ * e especificando a cor a ser utilizada.
  *
- * @author itakenami
+ * @author Igor Takenami <itakenami@gmail.com> 
+ * @see CorFonte
  */
 public class CorFundo {
     public static final int PRETO       = 40;
