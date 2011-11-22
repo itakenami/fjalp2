@@ -370,7 +370,7 @@ public final class Fjalp2 {
         if(PX>-1 && PY>-1){
             setPosicaoCursor(PX, PX, false);
         }
-        
+        Terminal.getTerminal().enableEcho();
     }
     
      /**

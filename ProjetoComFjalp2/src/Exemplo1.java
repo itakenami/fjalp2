@@ -22,8 +22,6 @@ public class Exemplo1 {
         Fjalp2.getTerminal().escreva("BEM VINDO AO FJALP2");
         
         Fjalp2.getTerminal().leiaTecla();
-         
-        
         
     }
      
