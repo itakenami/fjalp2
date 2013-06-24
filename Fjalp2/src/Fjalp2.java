@@ -335,7 +335,27 @@ public final class Fjalp2 {
      *
      */
     public void caixa(int x, int y, int largura, int altura){
-        largura++;
+        //largura++;
+        
+        //Ajusta a largura e altura máxima
+        if(x<0){
+            x=1;
+        }
+
+        if(y<0){
+            y=1;
+        }
+        int MAX_ALTURA = Fjalp2.getTerminal().getJlineTerminal().getTerminalHeight()-2;
+        int MAX_LARGURA = Fjalp2.getTerminal().getJlineTerminal().getTerminalWidth()-1;
+
+        if((largura+x)>MAX_LARGURA){
+            largura = MAX_LARGURA-x;
+        }
+
+        if((altura+y)>MAX_ALTURA){
+            altura = MAX_ALTURA-y;
+        }
+        
         //Linhas horinzontais
         setPosicaoCursor(x, y);
         escrevaChar(205, largura);
@@ -393,7 +413,28 @@ public final class Fjalp2 {
      *  
      */
     public void limpar(int x, int y, int largura, int altura){
-        largura++;
+        //largura++;
+        
+        //Ajusta a largura e altura máxima
+        if(x<0){
+            x=1;
+        }
+
+        if(y<0){
+            y=1;
+        }
+        int MAX_ALTURA = Fjalp2.getTerminal().getJlineTerminal().getTerminalHeight()-2;
+        int MAX_LARGURA = Fjalp2.getTerminal().getJlineTerminal().getTerminalWidth()-1;
+
+        if((largura+x)>MAX_LARGURA){
+            largura = MAX_LARGURA-x;
+        }
+
+        if((altura+y)>MAX_ALTURA){
+            altura = MAX_ALTURA-y;
+        }
+        
+        
         //Linhas horinzontais
         setPosicaoCursor(x, y, false);
         for(int z=0;z<altura;z++){
